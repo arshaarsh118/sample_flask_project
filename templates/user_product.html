@@ -1,0 +1,22 @@
+{% include 'user_header.html' %}
+
+<br><br><br><br><br>
+
+<h5>Menu</h5>
+<table class="table table-dark table-hover">
+    <tr>
+        <td>Item</td>
+        <td>Price</td>
+        <td>Total Quantity</td>
+        
+    </tr>
+    {% for i in data['view'] %}
+    <tr>
+        <td>{{i['name']}}</td>
+        <td>{{i['price']}}</td>
+        <td>{{i['stock']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br><br><br><br><br><br><br>
